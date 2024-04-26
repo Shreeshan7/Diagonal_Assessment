@@ -1,0 +1,145 @@
+/* Anagram.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Set background color for the entire page */
+  font-family: 'Lato', sans-serif;
+
+}
+
+.container {
+  max-width: 400px;
+  margin: 100px auto; /* Center the container vertically */
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff; /* Set background color for the container */
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #495057;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #616365;
+}
+
+.result {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.anagram {
+  color: green;
+}
+
+.not-anagram {
+  color: red;
+}
+
+/* NavBar.css */
+
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #343a40;
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #495057;
+}
+
+.navbar a.active {
+  background-color: #484b4d; 
+  color: #ffffff
+
+}
+/* OrderItems.css */
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0; 
+ }
+  
+ .order-items ol {
+  list-style: none; 
+  counter-reset: list-number;
+  width: 400px;
+ }
+ 
+ .order-items ol li {
+  counter-increment: list-number;
+  padding-left: 0.5 rem; 
+ }
+ 
+ .order-items ol li:before {
+  content: counter(list-number); 
+  display: inline-block;
+  width: 1.5rem; 
+  margin-right: 0.5rem; 
+  text-align: center;
+  color: #020202; /
+ }
+ 
+ .order-items li {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #f8f9fa;
+  border: 1px solid #a1a1a1;
+  border-radius: 4px;
+  cursor: grab;
+  transition: background-color 0.3s ease;
+ }
+ 
+ .order-items li:hover {
+  background-color: #e9ecef;
+ }
+ 
+ .order-items li.dragging {
+  background-color: #8cbbee;
+  
+ }
+ 
+
+
+
+
